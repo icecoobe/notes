@@ -81,3 +81,24 @@ TODO：
 ### TODO
 
 验证溢出的处理，比如-128 + (-128), 127+127
+
+``` c
+    char a = -128;
+    char b = 127;
+    char result = (char)(a + a);
+    printf("%d, %d\n", result, a+a);
+
+    result = b + b;
+    printf("%d, %d\n", result, b + b);
+
+    result = b + 1;
+    printf("%d, %d\n", result, b + b);
+```
+
+输出
+
+``` console
+0, -256
+-2, 254
+-128, 254
+```
