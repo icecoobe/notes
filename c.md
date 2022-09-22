@@ -85,3 +85,14 @@ Application Binary Interface, 规定了在某个平台上应用运行时必须�
 
 x86中使用enter和leave组合，enter执行3和4，leave执行8和9；
 call执行2，ret执行10
+
+## Test and profiling
+
+- CUnit, Cmocka
+- Instruments (OSX)
+- Windows Performance Recorder (WPR)
+- Perf (GNU/Linux)
+
+### TAP
+
+Test Anything Protocol
