@@ -21,3 +21,13 @@ The `.ui.qml` file exists to help Qt Quick Designer out. Normal QML files can co
 ## Overview - QML and C++ Integration
 
 [cppintegration overview](https://doc.qt.io/qt-5/qtqml-cppintegration-overview.html)
+
+## How to enable QSS highlight in QtCreator
+
+By default, the `*.qss` file is not highlighted in QtCreator. Here are the instructions to enable the highlight.
+
+- Open menu `Edit`, `Preference`
+- `Environment`, `MIME type`
+- `Registered MIME type`, input `text/css` to filter
+- in `details`, input `*.css;*.CSSL;*.qss`
+
