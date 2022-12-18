@@ -1,6 +1,55 @@
 
 # c++
 
+## const
+
+### 全局const变量
+
+const变量默认只再文件内有效，也就是跟文件内的static全局变量一样。
+因为const变量必须要在编译期间确定其初始值。
+
+如果某个const变量，初始值不是一个常量表达式，又想在文件之间共享，又不想编译器为每个文件生成独立的变量。
+
+解决办法就是，无论是全局const变量的定义还是声明，都要加上`extern`。
+
+```cpp
+// const_var.cpp
+#include <iostream>
+using namespace std;
+
+// NOTE: 这里的定义加上了extern
+extern const int k_num = 100;
+
+void print_knum()
+{
+    cout << __FUNCTION__ << ":" << k_num << endl;
+}
+
+```
+
+``` cpp
+// main.cpp
+#include <iostream>
+
+using namespace std;
+
+extern const int k_num;
+extern void print_knum();
+int main()
+{
+    cout << __FUNCTION__ << ":" << k_num << endl;
+    print_knum();
+    return 0;
+}
+```
+
+Output:
+
+``` shell
+main:100
+print_knum:100
+```
+
 ## Class
 
 ## namespace {} 替代文件内的全局`static`
