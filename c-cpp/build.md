@@ -34,6 +34,7 @@
 [Build System Basics][2]
 [Professional CMake.pdf][3]
 [Professional CMake][4]
+[It's time to do cmake right][5]
 
 ----
 
@@ -41,3 +42,4 @@
 [2]: https://bazel.build/basics
 [3]: https://github.com/rajsureshgeorge/linux_books/blob/master/scott_c_professional_cmake_a_practical_guide.pdf
 [4]: https://crascit.com/professional-cmake/
+[5]: https://pabloariasal.github.io/2018/02/19/its-time-to-do-cmake-right/
