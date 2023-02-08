@@ -31,8 +31,11 @@
 ### 构建交叉编译器
 
 >The C standard defines two different kinds of executing environments - "freestanding" and "hosted".
->While the definition might be rather fuzzy for the average application programmer, it is pretty clear-cut when you're doing OS development: A kernel is "freestanding", everything you do in user space is "hosted".
->A "freestanding" environment needs to provide only a subset of the C library: float.h, iso646.h, limits.h, stdalign.h, stdarg.h, stdbool.h, stddef.h, stdint.h and stdnoreturn.h (as of C11). All of these consist of typedef s and #define s "only", so you can implement them without a single .c file in sight.
+>While the definition might be rather fuzzy for the average application programmer,
+>it is pretty clear-cut when you're doing OS development: A kernel is "freestanding", everything you do in user space is "hosted".
+>A "freestanding" environment needs to provide only a subset of the C library:
+>float.h, iso646.h, limits.h, stdalign.h, stdarg.h, stdbool.h, stddef.h, stdint.h and stdnoreturn.h (as of C11).
+>All of these consist of typedef s and #define s "only", so you can implement them without a single .c file in sight.
 
 C语言标准规定了两种运行环境，独立和托管。  
 我们编译用户程序采用的就是后者，在这种情况下编译器和链接器都会自动添加依赖的C库运行库，并增加了C库的初始化和终止时的清理。  
@@ -56,7 +59,7 @@ C语言标准规定了两种运行环境，独立和托管。
 `--without-headers`: 强制libgcc不使用任何C库的头文件  
 `--with-newlib`: 配置libgcc和gcc中的**其他库**使用newlib的头文件，而不要使用C的标准库  
 
-newlib是RedHat公司的开源C标准库，不适用所有的平台，但是对于POSIX系统和嵌入式系统足够了。
+[newlib][5]是RedHat公司的开源C标准库，不适用所有的平台，但是对于POSIX系统和嵌入式系统足够了。
 
 ## reference
 
@@ -64,6 +67,8 @@ newlib是RedHat公司的开源C标准库，不适用所有的平台，但是对�
 [--build --target --host][2]
 [Canadian Cross][3]
 [Investigating the effects of GCC's --without-headers and --with-newlib configuration flags][4]
+[Why is the Canadian Cross used for cross-compilation in Linux From Scratch-1][6]
+[Why is the Canadian Cross used for cross-compilation in Linux From Scratch-2][7]
 
 ----------------------
 
@@ -71,3 +76,6 @@ newlib是RedHat公司的开源C标准库，不适用所有的平台，但是对�
 [2]: https://stackoverflow.com/a/53031636/827436
 [3]: https://wiki.osdev.org/Canadian_Cross
 [4]: https://www.ryanstan.com/withoutHeaders.html
+[5]: https://sourceware.org/newlib/
+[6]: https://unix.stackexchange.com/a/668847
+[7]: https://unix.stackexchange.com/a/668887
