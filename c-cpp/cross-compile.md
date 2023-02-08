@@ -37,15 +37,35 @@
 >float.h, iso646.h, limits.h, stdalign.h, stdarg.h, stdbool.h, stddef.h, stdint.h and stdnoreturn.h (as of C11).
 >All of these consist of typedef s and #define s "only", so you can implement them without a single .c file in sight.
 
+C 标准原文  
+>5.1.2 Execution environments
+Tw o execution environments are defined: freestanding and hosted. In both cases,
+program startup occurs when a designated C function is called by the execution
+environment. All objects with static storage duration shall be initialized (set to their
+initial values) before program startup. The manner and timing of such initialization are
+otherwise unspecified. Program termination returns control to the execution
+environment.
+
 C语言标准规定了两种运行环境，独立和托管。  
+在Hosted环境下，C程序入口点必须是命名为main的函数，而且其函数原型必须符合标准。  
+而在Freestanding环境下，C程序的入口点没有指定的名称，由程序员自行决定。  
+
 我们编译用户程序采用的就是后者，在这种情况下编译器和链接器都会自动添加依赖的C库运行库，并增加了C库的初始化和终止时的清理。  
 当我们想要构建新的系统平台（操作系统，独立的目标平台程序-编译器等），需要使用`freestanding`类型。
+
+注：这里的freestanding编译器和gcc的-ffreestanding选项有一定的关联。
+-ffreestanding将hosted的gcc降级为freestanding来使用。
 
 最保险的做法是：
 
 1. 构建freestanding的交叉编译器
 2. 用这个独立编译器编译目标glibc，binutils等
 3. 再用独立编译器开启完整功能选项，结合glibc等编译完整功能的交叉编译器
+
+1中的编译器针对OS、单片机和底层开发足够了。但是对于开发OS下用户程序是不够的，它不是一个hosted的编译器。  
+编译器hosted程序，需要初始化环境，这些依赖于C库。而编译器本身不知道glibc的路径，编译的时候需要额外的命令行参数来提供。  
+因此，还需要执行步骤2来构建一个完整功能的编译器。  
+binutils里面包含了链接器相关的功能套件。
 
 ``` shell
 [gcc-xxx.xx] $ ./configure          \
@@ -69,6 +89,7 @@ C语言标准规定了两种运行环境，独立和托管。
 [Investigating the effects of GCC's --without-headers and --with-newlib configuration flags][4]
 [Why is the Canadian Cross used for cross-compilation in Linux From Scratch-1][6]
 [Why is the Canadian Cross used for cross-compilation in Linux From Scratch-2][7]
+[Freestanding C与交叉编译器的生成原理分析][8]
 
 ----------------------
 
@@ -79,3 +100,4 @@ C语言标准规定了两种运行环境，独立和托管。
 [5]: https://sourceware.org/newlib/
 [6]: https://unix.stackexchange.com/a/668847
 [7]: https://unix.stackexchange.com/a/668887
+[8]: https://blog.csdn.net/smstong/article/details/53579148
