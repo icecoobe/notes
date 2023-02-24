@@ -9,6 +9,33 @@ Copy local public key to remote machine.
 ssh-copy-id -i id_rsa.pub uec1szh@SGHZ001036195
 ```
 
+## Shell Parameter Expansion
+
+### ${param:-${XXX}}
+
+检查param是否为空，如果是，则使用备选的XXX
+
+``` shell
+#A="aaabbbccc"
+B="bd"
+C=${A:-${B}}
+echo $A, $B, $C
+
+A="aaabbbccc"
+B="bd"
+C=${A:-${B}}
+echo $A, $B, $C
+```
+
+结果为
+
+```shell
+, bd, bd
+aaabbbccc, bd, aaabbbccc
+```
+
+[GNU doc](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
+
 ## shell script `set -xue`
 
 这些开关可以显式地写在脚本顶端，也可以在调用shell脚本时作为参数传入：
