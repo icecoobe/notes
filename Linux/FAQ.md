@@ -9,9 +9,45 @@ Copy local public key to remote machine.
 ssh-copy-id -i id_rsa.pub uec1szh@SGHZ001036195
 ```
 
+## shell script `set -xue`
+
+这些开关可以显式地写在脚本顶端，也可以在调用shell脚本时作为参数传入：
+
+``` shell
+sh -xeu xxx.sh
+```
+
+- `set -u`
+检查是否有变量未定义`undefined`，如果有未定义，则终止脚本执行。
+这个选项很有用，特别是当脚本里使用了`rm -rf`时可以避免意外的删除。
+
+``` shell
+#!/bin/bash
+
+set -u
+echo $AAA
+```
+
+- `set -e`
+脚本运行有错误error时，终止执行。相当于开启了断点。
+不使用它的时候，shell默认会继续执行后续语句。
+
+``` shell
+#!/bin/bash
+
+set -ue
+
+echo $AAA
+echo helloworld!
+```
+
+- `set -x`
+展开eXpand显示变量的内容
+
 ## Using Docker with Rootless Mode
 
 1.Add docker group to system (if non-existed)
+
 ``` shell
 sudo groupadd docker
 ```
