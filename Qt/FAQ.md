@@ -30,4 +30,3 @@ By default, the `*.qss` file is not highlighted in QtCreator. Here are the instr
 - `Environment`, `MIME type`
 - `Registered MIME type`, input `text/css` to filter
 - in `details`, input `*.css;*.CSSL;*.qss`
-
