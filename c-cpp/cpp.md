@@ -94,3 +94,9 @@ class A
     }
 };
 ```
+
+## Tools
+
+- [cdecl](https://cdecl.org/)
+  解析复杂的函数和指针定义等
+  [How do I understand complicated function declarations?](https://stackoverflow.com/a/2663377)
