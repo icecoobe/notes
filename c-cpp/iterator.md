@@ -1,171 +1,173 @@
 
 # iterator
 
-``` cpp
+``` c++
+#ifndef ITER_PRACTICE_HPP
+#define ITER_PRACTICE_HPP
 
 #include <iostream>
-#include <stdio.h>
-#include <vector>
-
 using namespace std;
 
-class Animal {
- public:
-    // NOTE: 这里不用virtual 析构的话，delete不会调用子类的析构
-  virtual ~Animal() { cout << "Animal ~()." << endl; }//= default;
-
-  virtual void MakeSound() const = 0;
-};
-
-class Dog : public Animal {
- public:
-  ~Dog() { cout << "Dog ~()." << endl; }
-  virtual void MakeSound() const override { std::cout << "woof!" << std::endl; }
-  //void MakeSound(int a) override {}
-};
-
-class NullAnimal : public Animal {
- public:
-  virtual void MakeSound() const override {}
-};
-
-struct IterPractice
+struct iter_practice
 {
-    struct iter
-    {
-        // iter m_internal;
-        int *p = nullptr;
-        iter(int* others) { p = others; }
-
-        // //iter() = delete;
-        // iter(const iter& i) { m_internal = i; }
-
-        iter& operator++(int a)
-        {
-            cout << "++: " << a << endl;
-            p += 1;
-            return *this;
-        }
-
-        iter& operator+(int a)
-        {
-            p += a;
-            return *this;
-        }
-
-        bool operator!=(const iter& it)
-        {
-            return (it.p != this->p);
-        }
-
-        int& operator*()//const iter& it)
-        {
-            return *p; //*this;
-        }
-    };
-
-    // struct const_iter
-    // {
-    //     const iter& operator++()
-    //     {}
-    // };
-
-    //int num[5] { 5, 100, 30, 49, 1 };
-    int num[5] { 500, 100, 300, 490, 1000 };
-
     void sort()
     {
         for (int i = 0; i < 5; i++)
             for (int j = i + 1; j < 5; j++)
-            {
-                if (num[j] < num[i])
+                if (nums[j] < nums[i])
                 {
-                    auto temp = num[j];
-                    num[j] = num[i];
-                    num[i] = temp;
+                    auto temp = nums[j];
+                    nums[j] = nums[i];
+                    nums[i] = temp;
                 }
-            }
     }
 
     operator bool() const
     {
-        if (num[0] == 100)
+        if (nums[0] == 100)
             return true;
 
         return false;
     }
 
-    iter m_it { ((int*)&num[0]) };
-    iter m_end { ((int*)&num[4]) };
-    
-    iter& begin() 
-    { 
-        m_it = iter((int*)&num[0]);
-        return m_it; 
+    struct iter
+    {
+        int* m_p = nullptr;
+
+        iter(int *p) { m_p = p; }
+
+        /**
+         * @brief operator ++ 后缀++
+         * @param step
+         * @return
+         */
+        iter& operator++(int step)
+        {
+            cout << "step: " << step << endl;
+            m_p++;
+            return *this;
+        }
+
+        /**
+         * @brief operator ++ ++前缀
+         * @return
+         */
+        iter& operator++()
+        {
+            m_p++;
+            return *this;
+        }
+
+        bool operator!=(const iter& others)
+        {
+            return others.m_p != m_p;
+        }
+
+        int& operator*()
+        {
+            return *m_p;
+        }
+
+    };
+
+    iter m_it { (int*)&nums[0] };
+    iter m_it_end { (int*)&nums[4] };
+    iter& begin()
+    {
+        m_it = (int*)&nums[0];
+        return m_it;
     }
 
-    iter& end() { return m_end; } //m_it + 4; }
+    iter& end() { return m_it_end; }
 
-    // iter operator*(const iter& it)
-    // {
-    //     return m_it;
-    // }
+    int operator[](size_t n)
+    {
+        if (n > 5)
+            return -1;
+
+        return nums[n];
+    }
+
+    friend int test_fr(const iter_practice& ip);
+private:
+    int nums[5] { 105, 100, 400, 200, 330 };
 };
 
-int get_num()
+#endif // ITER_PRACTICE_HPP
+```
+
+``` c++
+#include <iostream>
+
+using namespace std;
+
+#include "iter_practice.hpp"
+
+#include <vector>
+#include <tuple>
+
+int test_fr(const iter_practice& ip)
 {
-    int a = 10;
-    return a;
+    return ip.nums[2];
 }
 
-int main(void)
+int&& test(int &a)
 {
-    Dog *d = new Dog();
-    Animal *a = d;
+    //int a = 10;
+    return std::move(a);
+}
 
-    delete a;
-    //delete d;
-    
-    int &&ref_a = 3;
-    ref_a = 4;
-    int c = 1;
-    // int &&ref_b = c;
-    int && ref = get_num();
-    cout << ref << endl;
+int main()
+{
+    std::pair<int, float> p = std::make_pair(10, 3.5f);
+    std::pair<int, float> p2 = std::make_pair(110, 3.15f);
+    p.swap(p2);
+    cout << p.second << endl;
+    cout << "Hello World!" << endl;
 
-    cout << ref_a << ", " << &ref_a << endl;
-    cout << &c << endl;
+    iter_practice ip;
 
-    signed char i = 0B1'0'00'0000;
-    printf("%i, \n", i);
+    if (ip)
+        cout << "object is what we need;" << endl;
+    else
+        cout << "object is not what we need;" << endl;
 
-    vector<int> nums {2, 3,4,12};
+    ip.sort();
 
-    for (auto &n : nums)
-        cout << n << ", ";
+    if (ip)
+        cout << "object is what we need;" << endl;
+    else
+        cout << "object is not what we need;" << endl;
+
+    for (iter_practice::iter& it = ip.begin(); it != ip.end(); ++it)
+        cout << *it <<",";
     cout << endl;
 
-    IterPractice ip;
+    for (auto& i : ip)
+        cout << i << ",";
 
-    if (ip)
-    {
-        cout << "The object is what we need." << endl;
-    }
-    cout << ip << endl;
-    ip.sort();
-    cout << ip << endl;
-    if (ip)
-    {
-        cout << "The object is what we need." << endl;
-    }
+    cout << endl;
 
-    for (IterPractice::iter it = ip.begin(); it != ip.end(); it++)
-        cout << *it << endl;
+    vector<int> nums {10, 2, 5, 99, 1};
+    for (auto& n:nums)
+        cout << n << ",";
+    cout <<endl;
 
-    cout << "END" << endl;
-    // for (auto& t : ip)
-    //     cout << t << endl;
+    /**
+     *  @note sss
+     */
+    for (vector<int>::iterator it = nums.begin(); it != nums.end(); it++)
+        cout << *it.operator->() <<",";
+    cout << endl;
+
+    cout << __cplusplus << endl;
+    cout << test_fr(ip) << endl;
+    int a = 0xF9;
+    cout << test(a) << endl;
+
+    cout << ip[3] << endl;
 
     return 0;
 }
+
 ```
