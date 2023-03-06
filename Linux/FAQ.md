@@ -1,6 +1,34 @@
 
 # FAQ
 
+## 2>&1
+
+- 0:stdin
+- 1:stdout
+- 2:stderr
+
+redirect stderr appending to stdout stream. `&1`是为了与文件1区别
+
+``` shell
+echo test 2 >> 1
+echo test 2 >>&1
+```
+
+这两者是不一样的。
+
+## tee
+
+`tee` 命令支持从std IO读取并输出到文件。
+
+``` shell
+❯ make 2>&1 | tee a
+make: *** No targets specified and no makefile found.  Stop.
+❯ ls
+a 
+❯ cat a
+make: *** No targets specified and no makefile found.  Stop. 
+```
+
 ## ssh login without password
 
 Copy local public key to remote machine.
