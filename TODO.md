@@ -18,6 +18,10 @@
 7. [Professional CMake: A Practical Guide](https://crascit.com)
 8. Qt5.10 GUI完全参考手册
 9. [Docker Deep Dive](https://leanpub.com/dockerdeepdive)
+10. 数学之美
+11. 工程学-无尽的前沿
+12. 州县官的银两
+13. 山河故人
 
 ## Lessons
 
