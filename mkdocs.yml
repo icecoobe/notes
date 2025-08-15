@@ -1,0 +1,10 @@
+site_name: Luke's Notes
+site_url: https://icecoobe.github.io/notes
+repo_url: https://github.com/icecoobe/notes
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Linux: Linux/awesome-tools.md
+  - C/C++: c-cpp/c.md
+  - Misc: misc/thinking.md
