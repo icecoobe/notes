@@ -3,8 +3,75 @@ site_url: https://icecoobe.github.io/notes
 repo_url: https://github.com/icecoobe/notes
 theme:
   name: material
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    # - toc.integrate 
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: images/favicon.png
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/icecoobe
+      name: icecoobe on GitHub
 nav:
   - Home: index.md
-  - Linux: Linux/awesome-tools.md
-  - C/C++: c-cpp/c.md
-  - Misc: misc/thinking.md
+  - Linux: 
+    - Tools: Linux/awesome-tools.md
+    - Shell Script: Linux/best-practices-of-shell-scripts.md
+    - FAQ: Linux/FAQ.md
+    - Link File: Linux/link.md
+  - C/C++: 
+    - Overview: c-cpp/overview.md
+    - Encoding: c-cpp/data_encoding.md
+    - C: c-cpp/c.md
+    - C++: 
+      - Overview: c-cpp/cpp.md
+      - iterator: c-cpp/iterator.md
+    - Build: c-cpp/build.md
+    - Cross Compilation: c-cpp/cross-compile.md
+    - GoogleTest: c-cpp/googletest.md
+  - Misc: 
+    - Talk: misc/talk.md
+    - Thinking: misc/thinking.md
