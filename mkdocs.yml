@@ -131,7 +131,7 @@ nav:
   - Qt:
     - Add UI for class: Qt/add_ui.md
     - Custom Control: Qt/custom_control.md
-    - FAQ: Qt/faq.md
+    - FAQ: Qt/FAQ.md
   - Misc: 
     - Talk: misc/talk.md
     - Thinking: misc/thinking.md
