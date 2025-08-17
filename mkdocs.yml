@@ -50,7 +50,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: images/favicon.png
+  favicon: assets/avatar/favicon.png
   
 # Plugins
 plugins:
@@ -68,9 +68,9 @@ plugins:
       caption_position: bottom
       
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 extra_javascript:
-  - javascripts/mathjax.js
+  - assets/javascripts/mathjax.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
 
 # Extensions
