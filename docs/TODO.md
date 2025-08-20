@@ -5,6 +5,7 @@
 1. [Web Applications 101](https://www.robinwieruch.de/web-applications/)
 2. [Everything I Wish I Knew When Learning C](https://tmewett.com/c-tips/)
 3. [Rewrite, refactor, reinvent](https://herbcaudill.com/words/20190219-rewrite-refactor-reinvent)
+4. [自动驾驶仿真及其工具链（6万字扫盲）](https://zhuanlan.zhihu.com/p/606321816)
 
 ## Books
 
@@ -26,3 +27,4 @@
 ## Lessons
 
 1. [Intro to Database Systems](https://15445.courses.cs.cmu.edu/fall2025/)
+
