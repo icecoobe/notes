@@ -19,6 +19,8 @@
 大多数书籍本应是一篇博客文章。大多数博客文章本应是一条微博。大多数微博本应不写。
 -- [《发布 Newsletter 35年的35条教训》](https://www.cjchilvers.com/blog/35-lessons-from-35-years-of-newsletter-publishing/)
 
+当我们重构山水意念时，我们也在重构对生命的认知。 - 刘丹
+
 ## 如果风静止了
 
 风力发电正在全世界如火如荼地发展。
