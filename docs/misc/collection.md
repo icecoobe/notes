@@ -24,6 +24,10 @@
 4. [LeetCode 101 - A LeetCode Grinding Guide (C++ Version)](https://github.com/changgyhub/leetcode_101/blob/master/LeetCode%20101%20-%20A%20Grinding%20Guide.pdf)
    请注意，刷题只是提高面试乃至工作能力的一小部分。在计算机科学的海洋里，值得探索的东西太多，并不建议您花过多时间刷题。并且要成为一个优秀的计算机科学家，刷题只是入职的敲门砖，提高各种专业技能、打好专业基础、以及了解最新的专业方向或许更加重要。[GitHub Repo](https://github.com/changgyhub/leetcode_101)
 
+## AI
+
+[How Can AI ID a Cat? An Illustrated Guide.](https://www.quantamagazine.org/how-can-ai-id-a-cat-an-illustrated-guide-20250430/)
+
 ## Automotive
 
 

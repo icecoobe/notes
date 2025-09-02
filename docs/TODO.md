@@ -6,6 +6,7 @@
 2. [Everything I Wish I Knew When Learning C](https://tmewett.com/c-tips/)
 3. [Rewrite, refactor, reinvent](https://herbcaudill.com/words/20190219-rewrite-refactor-reinvent)
 4. [自动驾驶仿真及其工具链（6万字扫盲）](https://zhuanlan.zhihu.com/p/606321816)
+5. [How Can AI ID a Cat? An Illustrated Guide.](https://www.quantamagazine.org/how-can-ai-id-a-cat-an-illustrated-guide-20250430/)
 
 ## Books
 
@@ -23,6 +24,7 @@
 11. 工程学-无尽的前沿
 12. 州县官的银两
 13. 山河故人
+14. [Windows inside a Docker container.](https://github.com/dockur/windows)
 
 ## Lessons
 
