@@ -124,6 +124,8 @@ nav:
     - C++: 
       - Overview: c-cpp/cpp.md
       - iterator: c-cpp/iterator.md
+    - Design Pattern:
+      - Template Method: c-cpp/design_pattern/template_method.md
     - Build: c-cpp/build.md
     - Cross Compilation: c-cpp/cross-compile.md
     - GoogleTest: c-cpp/googletest.md
