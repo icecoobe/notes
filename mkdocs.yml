@@ -124,6 +124,10 @@ nav:
     - C++: 
       - Overview: c-cpp/cpp.md
       - iterator: c-cpp/iterator.md
+      - Basics:
+        - virtual: c-cpp/basics/virtual.md
+        - final: c-cpp/basics/final.md
+        - Pointer and Reference: c-cpp/basics/pointer_and_ref.md
     - Design Pattern:
       - Template Method: c-cpp/design_pattern/template_method.md
     - Build: c-cpp/build.md
