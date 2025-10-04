@@ -129,8 +129,9 @@ nav:
   - Algorithm: 
     - Overview: algo/overview.md
   - Qt:
+    - Overview: Qt/00.overview.md
     - Add UI for class: Qt/add_ui.md
-    - Custom Control: Qt/custom_control.md
+    - Custom Widget: Qt/custom_control.md
     - FAQ: Qt/FAQ.md
   - Misc: 
     - Talk: misc/talk.md

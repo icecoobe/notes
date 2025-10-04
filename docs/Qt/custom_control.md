@@ -1,6 +1,6 @@
-# custom control
+# 自定义Widget
 
-添加自定义控件的方式，就是新建一个class。可以选择带ui文件的，也可以c++ class，然后勾选qobject这些。
+添加自定义控件的方式，就是新建一个class。可以选择带ui文件的，也可以c++ class，然后勾选`qobject`这些。
 
 ```c++
 // battery_widget.h

@@ -1,4 +1,4 @@
-# add ui
+# widget类文件增加ui文件
 
 当widget的类已经写好了，想增加ui文件。
 
@@ -42,4 +42,4 @@ BatteryServiceWidget::BatteryServiceWidget(ble::GapDevice &gap, ble::GattService
 }
 ```
 
-最后，选择重新构建，生成ui_xxx.h头文件等。
+最后，选择重新构建，生成`ui_xxx.h`头文件等。
