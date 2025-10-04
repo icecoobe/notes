@@ -93,11 +93,11 @@ x86中使用`enter`和`leave`组合，`enter`执行3和4，`leave`执行8和9；
 - Windows Performance Recorder (WPR)
 - Perf (GNU/Linux)
 
-### TAP
+## TAP
 
 Test Anything Protocol
 
-### C程序的入口
+## C程序的入口
 
 main函数只能说是用户代码部分最优先执行的，而不是C程序的真正入口。因为在转入main执行之前，C库部分需要做一些初始化准备工作，同时在程序退出的时候也要做一些清理工作。
 
@@ -276,7 +276,7 @@ __data_start:
 	data_start = __data_start
 ```
 
-### CRT
+## CRT
 
 可以看到C运行时库在执行main之前，做了很多准备工作，也注册了清理析构部分的内容。之后，使用`__libc_start_main`来调用`main`函数。在程序退出的时候，C运行时库还会将main的返回值传递给`exit(int)`函数，告知操作系统本次程序执行的结果，这也是为什么我们能在shell中看到和获取返回值的原因。
 
