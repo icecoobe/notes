@@ -81,15 +81,15 @@ binutils里面包含了链接器相关的功能套件。
 
 [newlib][5]是RedHat公司的开源C标准库，不适用所有的平台，但是对于POSIX系统和嵌入式系统足够了。
 
-## reference
+## Reference
 
-[OSDev Wiki - GCC Cross-Compiler][1]
-[--build --target --host][2]
-[Canadian Cross][3]
-[Investigating the effects of GCC's --without-headers and --with-newlib configuration flags][4]
-[Why is the Canadian Cross used for cross-compilation in Linux From Scratch-1][6]
-[Why is the Canadian Cross used for cross-compilation in Linux From Scratch-2][7]
-[Freestanding C与交叉编译器的生成原理分析][8]
+1. [OSDev Wiki - GCC Cross-Compiler][1]
+2. [--build --target --host][2]
+3. [Canadian Cross][3]
+4. [Investigating the effects of GCC's --without-headers and --with-newlib configuration flags][4]
+5. [Why is the Canadian Cross used for cross-compilation in Linux From Scratch-1][6]
+6. [Why is the Canadian Cross used for cross-compilation in Linux From Scratch-2][7]
+7. [Freestanding C与交叉编译器的生成原理分析][8]
 
 ----------------------
 

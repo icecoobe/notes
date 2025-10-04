@@ -1,1 +1,64 @@
 # Overview
+
+## Bjarne Talks about the C++ language
+
+### How to learn C++, what is the best strategy to learn C++
+
+I think first you need an overview of the language.<br>
+A lot of students dig in and want to know everything about some little detail.
+But the point is , they can't understand it until they have a broader view of the language.
+
+
+As people go in and they see, oh, pointers.<br>
+Great, I want to know everything about pointers, and why would you want to do that?
+
+
+They should be work together with classes and other data types, and how do you do a traversal or a container and such.
+
+
+You shouldn't obsess about one little thing, or they  go in and they say, well, there're 32 different basic arithmetic types. It's probably right. I can't remember. 
+
+
+I mean, that's just the sew of little type or rules for conversion. 
+Most of the time, I don't use all of those types, and most of the time, I don't have to think about those things.
+
+
+So instead of digging into the little details, pointers, how to do a class, hierarchy, things like that, get an overview.
+
+### What should students focus on when learning C++?
+I think first of all they should try and look at C++ as a modern language.
+
+Far too many have learned C++ as if it was just C or as if it was still 1985, and that pains me a lot because it's much better these days. 
+
+You look at it and you see how to use the abstraction mechanisms, you use the libraries.
+
+They are the standard library which is fundamental data structures, few algorithms, timing, regular expressions, that kind of stuff. 
+
+Then there are specific libraries for specific areas, the database interfaces, you have specific graphic libraries, animations libraries, and such.
+
+
+So I think when you start programming, you stick to the fundamentals for a while, because well , the fundamentals are the fundamentals. 
+
+
+You have to know your algorithms, you have to know your data structures, you have to know a little bit of machine architecture if you want to write at that level.
+
+
+Then you're going to actually do something. If you're writing video game, you have to know what game's engine and the libraries that go in there.
+
+
+So you go through the fundamentals and then something specific to your interest.
+
+## 编译型语言vs解释型语言
+
+**编译型语言**会在编译阶段将错误或者潜在的风险提示出来；<br>
+相反动态类型语言可能会在运行时期报错，但是这时候用户是无法处理这些问题的，因为他们很可能不是开发人员。<br>
+编译器是开发人员的好帮手，可以生成代码，转换代码，也可以发现风险。<br>
+编译型语言的优势也是劣势，相比动态类型语言，我们需要先通过编译器生成目标平台上的可执行文件，再将该文件发布给用户；因此，为了支持多种平台，我们还需要针对每个平台编译生成对应的目标文件，再将其提供给用户。甚至还需要为了目标平台而去构建**交叉编译工具链**。<br>
+还有一个优势，编译型的语言生成的是最终可执行的目标文件，因此**运行效率高**。
+
+**动态类型语言**（比如python，JavaScript等）拥有很好的跨平台特性以及容易上手等特点。<br>
+因此，在web开发、系统管理等方面非常适合使用这一类型的语言，当下他们也获得了蓬勃的发展。<br>
+还有一种场景适合动态类型语言，当目标场景是交互式的时候，此时效率不是那么重要。比如AI和数据科学实验时，使用Jupyter Notebook进行即时开发，用户无需频繁地等待编译器处理&执行修改后的代码这个繁琐的流程。<br>
+动态类型的语言往往**运行效率比较低**，因为大多数是解释型语言，在运行时依赖解释器逐行将代码转换成目标系统的指令来运行。
+
+---
