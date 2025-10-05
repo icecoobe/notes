@@ -32,7 +32,7 @@
 
 === "UML Diagram"
 
-    ![Page-1](../../assets/drawio/c-cpp/template-method.drawio)
+    ![Page-1](../../assets/drawio/c-cpp/template-method-uml.drawio)
 
 === "C# Partial Class"
 
@@ -112,4 +112,5 @@ int main()
 ++ Preparing Job
 	B Job running ...
 -- Job finishes!
+
 ```
