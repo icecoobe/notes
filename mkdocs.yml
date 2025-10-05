@@ -9,7 +9,8 @@ repo_url: https://github.com/icecoobe/notes
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; 2025 icecoobe<br>The website content is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+# copyright: Copyright &copy; 2025 icecoobe<br>The website content is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+copyright: Copyright &copy; 2025 icecoobe <a href="https://squidfunk.github.io/mkdocs-material/reference/">Awesome - Material for MkDocs</a>
 
 # Configuration
 # ref: https://github.com/krahets/hello-algo/blob/main/mkdocs.yml
@@ -88,7 +89,6 @@ plugins:
       # based on the selected theme. Supports classic mkdocs and mkdocs-material.
       darkmode: true 
 
-      
 extra_css:
   - assets/stylesheets/extra.css
 extra_javascript:
@@ -130,6 +130,8 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 extra:
+  # remove Made with Material for MkDocs notice
+  generator: false
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/icecoobe

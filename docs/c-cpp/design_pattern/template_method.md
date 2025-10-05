@@ -24,15 +24,35 @@
 
 新建一个WinForm程序，我们可以看到这个Form类被拆成了两部分，一个是用户代码，另一个是设计器生成的代码。最终，它们会被合并成一个XXForm类，而开放给开发者修改的可以看成是一个钩子接口（这里是类包围的多个hook接口）。
 
-!!! Abstract
+???+ note
 
     以类为基本单元来看，我觉得继承本身就是一种模板方法模式，或者说模板方法的目的就是多态，而继承也是其实现机制之一。父类的接口是固定的，而子类可以重写父类的某些方法来实现不同的行为。
 
 ## UML
 
-![Page-1](../../assets/drawio/c-cpp/template-method.drawio)
-![Page-2](../../assets/drawio/c-cpp/template-method.drawio)
-![Page-2](../../assets/drawio/c-cpp/template-method.drawio)
+=== "UML Diagram"
+
+    ![Page-1](../../assets/drawio/c-cpp/template-method.drawio)
+
+=== "C# Partial Class"
+
+    ``` C#
+    // Customer.Part1.cs
+    public partial class Customer  
+    {  
+        public string Name { get; set; }  
+        public string Email { get; set; }  
+    }
+
+    // Customer.Part2.cs
+    public partial class Customer  
+    {  
+        public void DisplayCustomerInfo()  
+        {  
+            Console.WriteLine($"Name: {Name}, Email: {Email}");  
+        }  
+    }
+    ```
 
 ## Sample
 
