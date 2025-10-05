@@ -28,6 +28,12 @@
 
     以类为基本单元来看，我觉得继承本身就是一种模板方法模式，或者说模板方法的目的就是多态，而继承也是其实现机制之一。父类的接口是固定的，而子类可以重写父类的某些方法来实现不同的行为。
 
+## UML
+
+![Page-1](../../assets/drawio/c-cpp/template-method.drawio)
+![Page-2](../../assets/drawio/c-cpp/template-method.drawio)
+![Page-2](../../assets/drawio/c-cpp/template-method.drawio)
+
 ## Sample
 
 ```cpp

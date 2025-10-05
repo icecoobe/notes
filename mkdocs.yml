@@ -6,6 +6,7 @@ site_description: Pieces of life
 
 # repo
 repo_url: https://github.com/icecoobe/notes
+edit_uri: edit/main/docs/
 
 # Copyright
 copyright: Copyright &copy; 2025 icecoobe<br>The website content is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
@@ -43,6 +44,7 @@ theme:
     - navigation.top
     - navigation.footer
     - navigation.tracking
+    - navigation.instant
     - search.highlight
     - search.share
     - search.suggest
@@ -66,12 +68,34 @@ plugins:
       draggable: false
       auto_caption: false
       caption_position: bottom
+  - drawio:
+      # Control if hovering on a diagram shows a toolbar for zooming or not
+      toolbar: true
+
+      # Control if tooltips will be shown (data-tooltips)
+      tooltips: true
+
+      # Increase or decrease the padding around your diagrams
+      # (data-border)
+      border: 5
+
+      # Control if edit button will be shown in the lightbox view
+      # (data-edit)
+      edit: true
+
+      # Control if darkmode is supported
+      # When activated the color scheme for your diagrams is automatically toggled
+      # based on the selected theme. Supports classic mkdocs and mkdocs-material.
+      darkmode: true 
+
       
 extra_css:
   - assets/stylesheets/extra.css
 extra_javascript:
   - assets/javascripts/mathjax.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
+  - https://viewer.diagrams.net/js/viewer-static.min.js
+  - assets/javascripts/drawio-reload.js
 
 # Extensions
 markdown_extensions:
