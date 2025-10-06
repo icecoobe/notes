@@ -144,11 +144,13 @@ nav:
     - FAQ: Linux/FAQ.md
     - Link File: Linux/link.md
   - C/C++: 
-    - Overview: c-cpp/00.overview.md
     - Encoding: c-cpp/data_encoding.md
-    - C: c-cpp/c.md
+    - C: 
+      - Overview: c-cpp/c/00.overview.md
+      - Tour of C: c-cpp/c/01.tour_of_c.md
     - C++: 
-      - Overview: c-cpp/cpp.md
+      - Overview: c-cpp/00.overview.md
+      - Tour of C++: c-cpp/01.tour_of_cpp.md
       - iterator: c-cpp/iterator.md
       - Basics:
         - virtual: c-cpp/basics/virtual.md
