@@ -31,10 +31,10 @@
 
 ## Reference
 
-[Build System Basics][2]
-[Professional CMake.pdf][3]
-[Professional CMake][4]
-[It's time to do cmake right][5]
+1. [Build System Basics][2]
+2. [Professional CMake.pdf][3]
+3. [Professional CMake][4]
+4. [It's time to do cmake right][5]
 
 ----
 
