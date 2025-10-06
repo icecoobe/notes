@@ -156,6 +156,7 @@ nav:
         - virtual: c-cpp/basics/virtual.md
         - final: c-cpp/basics/final.md
         - Pointer and Reference: c-cpp/basics/pointer_and_ref.md
+        - RTTI: c-cpp/basics/rtti.md
     - Design Pattern:
       - Template Method: c-cpp/design_pattern/template_method.md
     - Build: c-cpp/build.md
