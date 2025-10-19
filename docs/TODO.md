@@ -7,6 +7,7 @@
 3. [Rewrite, refactor, reinvent](https://herbcaudill.com/words/20190219-rewrite-refactor-reinvent)
 4. [自动驾驶仿真及其工具链（6万字扫盲）](https://zhuanlan.zhihu.com/p/606321816)
 5. [How Can AI ID a Cat? An Illustrated Guide.](https://www.quantamagazine.org/how-can-ai-id-a-cat-an-illustrated-guide-20250430/)
+6. [Cyber RT 性能分析工具](https://apollo.baidu.com/docs/apollo/latest/md_docs_2_xE6_xA1_x86_xE6_x9E_xB6_xE8_xAE_xBE_xE8_xAE_xA1_2_xE8_xBD_xAF_xE4_xBB_xB6_xE6_xA0_xB8_6e1788c4b6e17fd05049c6ee58c94bbf.html)
 
 ## Books
 
@@ -29,4 +30,5 @@
 ## Lessons
 
 1. [Intro to Database Systems](https://15445.courses.cs.cmu.edu/fall2025/)
+
 
