@@ -25,8 +25,10 @@ For more information:
 
 - [explainshell.com][1]
 - [Google Shell Style Guide][2]
+- [System & Process Supervisor for Linux - watchdogd][3]
 
 ------------------------------------------------------------
 
 [1]:https://www.explainshell.com/
 [2]:https://google.github.io/styleguide/shellguide.html
+[3]:https://github.com/troglobit/watchdogd

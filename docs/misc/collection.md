@@ -14,6 +14,7 @@
 - [现代C++教程：高速上手 C++ 11/14/17/20](https://changkun.de/modern-cpp/zh-cn/00-preface/)
 - [Crascit - Professional CMake: A Practical Guide](https://crascit.com/)
 - [高性能服务器开发 技术专栏](https://balloonwj.github.io/cpp-guide-web/)
+- [熬夜肝了这一份C++开发学习路线](https://juejin.cn/post/6997248187413037070)
 
 ## Algo
 
@@ -26,7 +27,8 @@
 
 ## AI
 
-[How Can AI ID a Cat? An Illustrated Guide.](https://www.quantamagazine.org/how-can-ai-id-a-cat-an-illustrated-guide-20250430/)
+1. [How Can AI ID a Cat? An Illustrated Guide.](https://www.quantamagazine.org/how-can-ai-id-a-cat-an-illustrated-guide-20250430/)
+2. [LLM Visualization](https://bbycroft.net/llm)
 
 ## Automotive
 
@@ -49,3 +51,7 @@
 ## Embedded System
 
 - [Embedded Linux System with the Yocto Project - Sample PDF](https://ptgmedia.pearsoncmg.com/images/9780133443240/samplepages/9780133443240.pdf)
+- [SSD201开发指南](https://troylee.notion.site/SSD201-385dec9395204454b706f2f563d5ecc3)
+- [Linux 485收发延迟解决方法](https://www.cnblogs.com/leisure_chn/p/10381616.html#!comments)
+
+----------------------------------------------
