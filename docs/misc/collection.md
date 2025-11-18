@@ -48,6 +48,7 @@
 10. [自动驾驶 on AWS — 创业公司高速成长背后的秘密武器](https://zhuanlan.zhihu.com/p/152519498)
 11. [基于Windows SaaS应用的现代化改造实践](https://aws.amazon.com/cn/blogs/china/modernization-practice-based-on-windows-saas-application/)
 12. [自动驾驶仿真及其工具链（6万字扫盲）](https://zhuanlan.zhihu.com/p/606321816)
+13. [ETAS EDMS - ETAS Deterministic Middleware Solution](https://edms.etas.com/)
 
 ## Computer Science
 
