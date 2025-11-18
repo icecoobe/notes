@@ -38,6 +38,8 @@ For more information:
 
 [GDB Dashboard](https://github.com/cyrus-and/gdb-dashboard)
 
+[VS Code Debug Visualizer](https://github.com/hediet/vscode-debug-visualizer)
+
 ## Profiling
 
 - [google/perfetto](https://github.com/google/perfetto)
