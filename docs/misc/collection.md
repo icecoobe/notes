@@ -29,6 +29,10 @@
 
 1. [How Can AI ID a Cat? An Illustrated Guide.](https://www.quantamagazine.org/how-can-ai-id-a-cat-an-illustrated-guide-20250430/)
 2. [LLM Visualization](https://bbycroft.net/llm)
+3. [Approaching (Almost) Any Machine Learning Problem](https://github.com/abhishekkrthakur/approachingalmost)
+4. [Machine Learning Compilation - 机器学习编译](https://mlc.ai/zh/chapter_introduction/index.html)
+5. [vendor independent TinyML deep learning library, compiler and inference framework microcomputers and micro-controllers](https://github.com/ai-techsystems/deepC)
+6. [AI-powered search engine](https://www.perplexity.ai/)
 
 ## Automotive
 
@@ -43,10 +47,17 @@
 9. [Guidance for Autonomous Driving Data Framework on AWS](https://aws.amazon.com/solutions/guidance/autonomous-driving-data-framework-on-aws/)
 10. [自动驾驶 on AWS — 创业公司高速成长背后的秘密武器](https://zhuanlan.zhihu.com/p/152519498)
 11. [基于Windows SaaS应用的现代化改造实践](https://aws.amazon.com/cn/blogs/china/modernization-practice-based-on-windows-saas-application/)
+12. [自动驾驶仿真及其工具链（6万字扫盲）](https://zhuanlan.zhihu.com/p/606321816)
 
 ## Computer Science
 
-
+- [心中的内核 -- 在阅读内核代码之前先理解内核](https://cppguide.cn/pages/the-kernel-in-the-mind-contents)
+- [how-to-create-an-operating-system book](https://samypesse.gitbook.io/how-to-create-an-operating-system)
+- [how-to-create-an-operating-system GitHub](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System)
+- [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+- [云原生词汇表](https://glossary.cncf.io/zh-cn/)
+- [苹果往事故事网站 - The Original Macintosh](https://www.folklore.org)
+- [Curated list of project-based tutorials](https://github.com/practical-tutorials/project-based-learning)
 
 ## Embedded System
 

@@ -90,6 +90,7 @@ binutils里面包含了链接器相关的功能套件。
 5. [Why is the Canadian Cross used for cross-compilation in Linux From Scratch-1][6]
 6. [Why is the Canadian Cross used for cross-compilation in Linux From Scratch-2][7]
 7. [Freestanding C与交叉编译器的生成原理分析][8]
+8. [Why is the Canadian Cross used for cross-compilation in Linux From Scratch-3][9]
 
 ----------------------
 
@@ -101,3 +102,4 @@ binutils里面包含了链接器相关的功能套件。
 [6]: https://unix.stackexchange.com/a/668847
 [7]: https://unix.stackexchange.com/a/668887
 [8]: https://blog.csdn.net/smstong/article/details/53579148
+[9]: https://unix.stackexchange.com/questions/668844/why-is-the-canadian-cross-used-for-cross-compilation-in-linux-from-scratch
