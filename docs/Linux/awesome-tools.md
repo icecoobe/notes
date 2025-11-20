@@ -48,6 +48,13 @@ For more information:
 - [Practical Linux tracing ( Part 1/5) : symbols, debug symbols and stack unwinding](https://tungdam.medium.com/things-you-should-know-to-begin-playing-with-linux-tracing-tools-part-i-x-225aae1aaf13)
 - [Brendan Gregg's Homepage](https://www.brendangregg.com/)
 
+## Misc
+
+- [Remote Access via Web Browser - Apache Guacamole](https://guacamole.apache.org/)
+- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+- [Zsh Theme - powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- [Zsh Theme - Honukai](https://github.com/oskarkrawczyk/honukai-iterm-zsh)
+
 ------------------------------------------------------------
 
 [1]:https://www.explainshell.com/
