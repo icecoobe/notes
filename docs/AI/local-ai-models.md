@@ -87,6 +87,10 @@ Most AI models run well on mid-range laptops or desktops with 8GB of RAM or a de
 
 ```bash
 # 安装 Ollama (macOS/Linux)
+# 注意：为了安全，建议先下载脚本查看内容再执行
+# curl -fsSL https://ollama.com/install.sh -o install.sh
+# cat install.sh  # 检查脚本内容
+# bash install.sh
 curl -fsSL https://ollama.com/install.sh | sh
 
 # 运行模型
@@ -176,12 +180,23 @@ docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 # 示例：使用 Ollama API
 import requests
 
-response = requests.post('http://localhost:11434/api/generate', json={
-    'model': 'llama3',
-    'prompt': 'Why is the sky blue?'
-})
-
-print(response.json())
+try:
+    response = requests.post('http://localhost:11434/api/generate', json={
+        'model': 'llama3',
+        'prompt': 'Why is the sky blue?'
+    }, timeout=30)
+    
+    response.raise_for_status()  # 检查 HTTP 状态码
+    print(response.json())
+    
+except requests.exceptions.ConnectionError:
+    print("错误：无法连接到 Ollama 服务。请确保 Ollama 正在运行。")
+except requests.exceptions.Timeout:
+    print("错误：请求超时。模型可能需要更多时间来响应。")
+except requests.exceptions.HTTPError as e:
+    print(f"错误：HTTP 请求失败 - {e}")
+except Exception as e:
+    print(f"发生未知错误：{e}")
 ```
 
 ## 故障排除和技巧 / Troubleshooting & Tips
