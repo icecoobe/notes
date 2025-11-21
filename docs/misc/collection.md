@@ -33,6 +33,7 @@
 4. [Machine Learning Compilation - 机器学习编译](https://mlc.ai/zh/chapter_introduction/index.html)
 5. [vendor independent TinyML deep learning library, compiler and inference framework microcomputers and micro-controllers](https://github.com/ai-techsystems/deepC)
 6. [AI-powered search engine](https://www.perplexity.ai/)
+7. [Running Your Own Local Open-Source AI Model Is Easy—Here's How](https://decrypt.co/348129/running-your-own-local-open-source-ai-model-easy-heres-how)
 
 ## Automotive
 
