@@ -27,6 +27,7 @@
 12. 州县官的银两
 13. 山河故人
 14. [Windows inside a Docker container.](https://github.com/dockur/windows)
+15. [强化学习的数学基础](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning)
 
 ## Lessons
 
