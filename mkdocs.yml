@@ -173,6 +173,8 @@ nav:
     - Custom Widget: Qt/custom_control.md
     - Plugin: Qt/qt_plugin.md
     - FAQ: Qt/FAQ.md
+  - AI:
+    - Local AI Models: AI/local-ai-models.md
   - Misc: 
     - Talk: misc/talk.md
     - Thinking: misc/thinking.md
