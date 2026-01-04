@@ -2,7 +2,7 @@
 
 ## Articles
 
-1. [Web Applications 101](https://www.robinwieruch.de/web-applications/)
+1. ~~[Web Applications 101](https://www.robinwieruch.de/web-applications/)~~
 2. [Everything I Wish I Knew When Learning C](https://tmewett.com/c-tips/)
 3. [Rewrite, refactor, reinvent](https://herbcaudill.com/words/20190219-rewrite-refactor-reinvent)
 4. [自动驾驶仿真及其工具链（6万字扫盲）](https://zhuanlan.zhihu.com/p/606321816)
@@ -21,12 +21,12 @@
    请注意，刷题只是提高面试乃至工作能力的一小部分。在计算机科学的海洋里，值得探索的东西太多，并不建议您花过多时间刷题。并且要成为一个优秀的计算机科学家，刷题只是入职的敲门砖，提高各种专业技能、打好专业基础、以及了解最新的专业方向或许更加重要。
 7. [Professional CMake: A Practical Guide](https://crascit.com)
 8. Qt5.10 GUI完全参考手册
-9. [Docker Deep Dive](https://leanpub.com/dockerdeepdive)
+9. ~~[Docker Deep Dive](https://leanpub.com/dockerdeepdive)~~
 10. 数学之美
 11. 工程学-无尽的前沿
 12. 州县官的银两
 13. 山河故人
-14. [Windows inside a Docker container.](https://github.com/dockur/windows)
+14. ~~[Windows inside a Docker container.](https://github.com/dockur/windows)~~
 15. [强化学习的数学基础](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning)
 
 ## Lessons

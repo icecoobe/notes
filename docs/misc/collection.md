@@ -33,6 +33,9 @@
 4. [Machine Learning Compilation - 机器学习编译](https://mlc.ai/zh/chapter_introduction/index.html)
 5. [vendor independent TinyML deep learning library, compiler and inference framework microcomputers and micro-controllers](https://github.com/ai-techsystems/deepC)
 6. [AI-powered search engine](https://www.perplexity.ai/)
+7. [Google白皮书](https://github.com/sdivyanshu90/5-Day-AI-Agents-Intensive-Course-with-Google/tree/39fe09e63a28f244b75fd674c8b261c4a3730444/Day%201/whitepaper)
+   [Kaggle课程](https://www.kaggle.com/learn-guide/5-day-agents)
+8. [图解大模型](https://weread.qq.com/web/reader/14032420813ab9f2bg0110b9)
 
 ## Automotive
 
@@ -65,5 +68,9 @@
 - [Embedded Linux System with the Yocto Project - Sample PDF](https://ptgmedia.pearsoncmg.com/images/9780133443240/samplepages/9780133443240.pdf)
 - [SSD201开发指南](https://troylee.notion.site/SSD201-385dec9395204454b706f2f563d5ecc3)
 - [Linux 485收发延迟解决方法](https://www.cnblogs.com/leisure_chn/p/10381616.html#!comments)
+
+## Web
+
+1. [Web Applications 101](https://www.robinwieruch.de/web-applications/)
 
 ----------------------------------------------
