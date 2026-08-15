@@ -173,6 +173,9 @@ nav:
     - Custom Widget: Qt/custom_control.md
     - Plugin: Qt/qt_plugin.md
     - FAQ: Qt/FAQ.md
+  - ADAS:
+    - Overview: adas/overview.md
+    - Reference: adas/ref.md
   - Misc: 
     - Talk: misc/talk.md
     - Thinking: misc/thinking.md
